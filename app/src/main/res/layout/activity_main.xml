@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:verticalScrollbarPosition="defaultPosition"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="354dp">
+
+        <TextView
+            android:id="@+id/titre"
+            android:textStyle="bold"
+            android:layout_width="281dp"
+            android:layout_height="51dp"
+            android:text="MoneyConvert"
+            android:textColor="#E91E63"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.105" />
+
+        <EditText
+            android:id="@+id/e_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:layout_width="178dp"
+            android:layout_height="168dp"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="143dp">
+
+            <RadioButton
+                android:id="@+id/EuroDinar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Euro to Dinar" />
+
+            <RadioButton
+                android:id="@+id/DinarEuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dinar to Euro" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bconvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="390dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
